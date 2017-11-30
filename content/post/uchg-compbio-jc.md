@@ -7,8 +7,8 @@ tags = ["general"]
 ghcommentid = 1
 +++
 
-In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we brought up the notion of crowdsourcing the efforts of reading papers.
-The gist is that we should figure out a way to not only share our literature reading notes, but also engage in discussions / debates if there are multiple people interested in the same paper. 
+In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we came up with the notion of crowdsourcing the efforts of reading papers.
+The gist is that we should figure out a way to not only share our literature reading notes, but also engage in discussions / debates if there are multiple people interested in the same paper.
 
 We were excited about the idea. But how do we go about implementing it? Ideally we want a platform that:
 
@@ -28,11 +28,11 @@ Keywords like `markdown`, `git`, `github.io` all came out when we brainstormed i
 I volunteered to dig into this a bit further because I really like the idea. But it was not until today that I am resolved to make a serious effort. So here comes a preliminary solution: the Paper Reading Blog. 
 
 ## Overview
-Posting a reading blog essentially boils down to making `markdown` notes for papers you read, adding to it a few lines of meta info (such as author, date, tags), open a [github issue](https://github.com/xinhe-lab/journal-club/issues) to allow for discussions and embed it to the post, generate HTML pages via a 4-letter command and push it to the [github repo](https://github.com/xinhe-lab/journal-club). The outcome is this website you are looking at. 
+To posting a note to this blog, you 1) write up a `markdown` document for the paper you want to share, 2) adding to it a few lines of meta info (such as author, date, tags), 3) open a [github issue](https://github.com/xinhe-lab/journal-club/issues) to allow for discussions and embed it to the post, 4) render it to HTML via a 4-letter command and 5) push it to the [github repo](https://github.com/xinhe-lab/journal-club). The outcome is this website you are looking at. 
 
 ## Taking notes
 
-I use [`Mendeley`](https://www.mendeley.com/) to organize literature and to read them (reading printed paper cause me neck pains ...). In `Mendeley`, as demonstrated in this video below, one can annotate papers and take notes on the side panel. I usually write these notes in `markdown` format anyways.
+I use [`Mendeley`](https://www.mendeley.com/) to organize literature and to read them (reading printed paper cause me neck pains ...). In `Mendeley`, as demonstrated in the video below, one can annotate papers and take notes on the side panel. I usually write these notes in `markdown` format anyways even inside `Mendeley`.
 
 <hr>
 {{% youtube GRqjB7FE-M8 %}}
@@ -41,7 +41,7 @@ I use [`Mendeley`](https://www.mendeley.com/) to organize literature and to read
 ## Sharing notes 
 ### Pre-requisites
 
-We generate static webpages via `hugo` [download here](https://github.com/gohugoio/hugo/releases), a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows (and more!). After you download the program, you can place it in one of your system's `PATH` folder in order to trigger it from command line. To show your existing `PATH`:
+We generate static webpages via `hugo` [download here](https://github.com/gohugoio/hugo/releases), a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows (and more!). After you download the executable for your platform, you can place it in one of your system's `PATH` folder in order to trigger it from command line. To show your existing `PATH`:
 
 ```bash
 echo $PATH
@@ -49,7 +49,7 @@ echo $PATH
 
 ### Create a post
 
-Suppose you have your note taken in a `markdown` file (either pulled from your Mendeley library or typed up after your hand-written notes) ready to share with others. You can first clone this repo:
+Suppose you have your note written in a `markdown` file (either copied from your Mendeley notes or typed up after your hand-written notes) ready to share on this blog. You can first clone this repo:
 
 ```
 git clone https://github.com/xinhe-lab/journal-club
@@ -84,7 +84,35 @@ Now, simply type `hugo` at the root of the repository (where you can find `confi
 hugo
 ```
 
-The HTML files will be generated to `docs` folder, which you can add and commit:
+The HTML files will be generated to `docs` folder. Optionally you can preview the post before publishing it online:
+
+```bash
+hugo server
+```
+
+You see the website preview is published locally to `http://localhost:1313/journal-club`:
+
+```
+Started building sites ...
+Built site for language en:
+0 draft content
+0 future content
+0 expired content
+1 regular pages created
+10 other pages created
+0 non-page files copied
+3 paginator pages created
+0 topics created
+1 tags created
+total in 31 ms
+Watching for changes in /home/gaow/GIT/wiki/journal-club/{data,content,static,themes}
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/journal-club/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+```
+
+Finally, to upload the post to github:
 
 ```bash
 git add docs/*
@@ -92,4 +120,4 @@ git commit -am "Add note for K. Dey et al 2017"
 git push
 ```
 
-Now your note is published at https://xinhe-lab.github.io/journal-club with comments linked to github issues of this repository.
+Now visit https://xinhe-lab.github.io/journal-club to see your post publised with comments linked to github issues of this repository :)
