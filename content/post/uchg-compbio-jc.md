@@ -4,6 +4,7 @@ draft = false
 title = "Crowd-source paper reading"
 author = "Gao Wang"
 tags = ["general"]
+ghcommentid = 1
 +++
 
 In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we brought up the notion of *crowd-source* paper reading. 
@@ -81,9 +82,9 @@ hugo
 
 The HTML files will be generated to `docs` folder, which you can add and commit:
 
-```
+```bash
 git add docs/*
-git commit -am "Add note for Doe et al 2017"
+git commit -am "Add note for K. Dey et al 2017"
 git push
 ```
 

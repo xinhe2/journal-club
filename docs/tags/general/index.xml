@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HGComputational Journal Club</title>
-    <link>./</link>
-    <description>Recent content on HGComputational Journal Club</description>
+    <title>General on HGComputational Journal Club</title>
+    <link>./tags/general/</link>
+    <description>Recent content in General on HGComputational Journal Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>gaow@uchicago.edu (Gao Wang)</managingEditor>
@@ -11,7 +11,7 @@
     <copyright>(c) 2017 Copyright University of Chicago | Human Genetics Computational Group</copyright>
     <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="./index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./tags/general/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
