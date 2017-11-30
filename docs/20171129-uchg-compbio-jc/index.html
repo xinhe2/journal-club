@@ -56,7 +56,7 @@
     },
     "datePublished": "2017-11-29",
     "description": "",
-    "wordCount": 717
+    "wordCount": 755
   }
 </script>
   
@@ -223,7 +223,7 @@ MathJax.Hub.Config({
     &middot; by Gao Wang
   
   &middot; Read in about 4 min
-  &middot; (717 words)
+  &middot; (755 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171129-uchg-compbio-jc%2f" onclick="window.open(this.href, 'mywin',
@@ -344,10 +344,17 @@ draft = false
 <p>The <code>date</code>, <code>tags</code> and <code>ghcommentid</code> entries are the most important:</p>
 
 <ul>
-<li>The HTML page generated from <code>content/post/filename.md</code> will be named as <code>date-filename.html</code></li>
-<li>The <code>tags</code> will organize your notes by research field or researcher names depending on how you tag it</li>
-<li>The <code>ghcommentid</code> should match the issue ID you have just opened; otherwise the &laquo;comments&raquo; section will not load properly</li>
+<li>The HTML page generated from <code>content/post/filename.md</code> will be named as <code>date-filename.html</code>.</li>
+<li>The <code>tags</code> will organize your notes by research field or researcher names depending on how you tag it.</li>
+<li>The <code>ghcommentid</code> should match the issue ID you have just opened; otherwise the &laquo;comments&raquo; section will not load properly. See image below &ndash; <code>ghcommentid = 1</code> points to Issue #1 on this repo.</li>
 </ul>
+
+<hr>
+
+<p><img src="https://xinhe-lab.github.io/journal-club/201711/setup-comments.png" alt="" /></p>
+
+<p>(Incidentally, to add image to post, you can place the image under [<code>static</code> folder]() and load it from [the <code>markdown</code> file]() as demonstrated here.)
+<hr></p>
 
 <p>Now, simply type <code>hugo</code> at the root of the repository (where you can find <code>config.toml</code>):</p>
 
@@ -356,7 +363,7 @@ draft = false
 
 <p>The HTML files will be generated to <code>docs</code> folder. Optionally you can preview the post before publishing it online:</p>
 
-<pre><code class="language-bash">hugo server
+<pre><code class="language-bash">hugo serve
 </code></pre>
 
 <p>You see the website preview is published locally to <code>http://localhost:1313/journal-club</code>:</p>

@@ -74,9 +74,15 @@ draft = false
 
 The `date`, `tags` and `ghcommentid` entries are the most important:
 
-- The HTML page generated from `content/post/filename.md` will be named as `date-filename.html` 
-- The `tags` will organize your notes by research field or researcher names depending on how you tag it
-- The `ghcommentid` should match the issue ID you have just opened; otherwise the "comments" section will not load properly
+- The HTML page generated from `content/post/filename.md` will be named as `date-filename.html`.
+- The `tags` will organize your notes by research field or researcher names depending on how you tag it.
+- The `ghcommentid` should match the issue ID you have just opened; otherwise the "comments" section will not load properly. See image below -- `ghcommentid = 1` points to Issue #1 on this repo.
+
+<hr>
+![](/201711/setup-comments.png)
+
+(Incidentally, to add image to post, you can place the image under [`static` folder]() and load it from [the `markdown` file]() as demonstrated here.)
+<hr>
 
 Now, simply type `hugo` at the root of the repository (where you can find `config.toml`):
 
@@ -87,7 +93,7 @@ hugo
 The HTML files will be generated to `docs` folder. Optionally you can preview the post before publishing it online:
 
 ```bash
-hugo server
+hugo serve
 ```
 
 You see the website preview is published locally to `http://localhost:1313/journal-club`:
