@@ -1,2 +1,2 @@
 # journal-club
-Short summaries of articles read by He lab members
+Short summaries of articles & discussions by UCHG Computational Biology Group

@@ -1,7 +1,7 @@
 +++
 date = "2017-11-29"
 draft = false
-title = "Crowd-source paper reading"
+title = "Let's read & talk!"
 author = "Gao Wang"
 tags = ["general"]
 ghcommentid = 1
