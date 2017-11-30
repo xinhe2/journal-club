@@ -3,7 +3,8 @@ date = "2017-11-29"
 draft = false
 title = "Read-n-share"
 author = "Gao Wang"
-tags = ["general"]
+tags = ["git"]
+topics = ["general"]
 ghcommentid = 1
 +++
 
@@ -64,7 +65,8 @@ Before you render the HTML pages and commit, please make sure you properly add i
 date = "2017-11-29"
 title = "Read-n-share"
 author = "Gao Wang"
-tags = ["general"]
+tags = ["git"]
+topics = ["general"]
 ghcommentid = 1
 draft = false
 +++
