@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>./20171129-uchg-compbio-jc/</loc>
+    <loc>https://xinhe-lab.github.io/journal-club/20171129-uchg-compbio-jc/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>./tags/general/</loc>
-    <lastmod>2017-11-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>./</loc>
+    <loc>https://xinhe-lab.github.io/journal-club/tags/general/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>./post/</loc>
+    <loc>https://xinhe-lab.github.io/journal-club/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>./tags/</loc>
+    <loc>https://xinhe-lab.github.io/journal-club/post/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>./topics/</loc>
+    <loc>https://xinhe-lab.github.io/journal-club/tags/</loc>
+    <lastmod>2017-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xinhe-lab.github.io/journal-club/topics/</loc>
     <priority>0</priority>
   </url>
   

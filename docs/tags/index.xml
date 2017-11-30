@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on HGComputational Journal Club</title>
-    <link>./tags/</link>
+    <link>https://xinhe-lab.github.io/journal-club/tags/</link>
     <description>Recent content in Tags on HGComputational Journal Club</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
@@ -11,15 +11,15 @@
     <copyright>(c) 2017 Copyright University of Chicago | Human Genetics Computational Group</copyright>
     <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="./tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xinhe-lab.github.io/journal-club/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>General</title>
-      <link>./tags/general/</link>
+      <link>https://xinhe-lab.github.io/journal-club/tags/general/</link>
       <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>
       <author>gaow@uchicago.edu (Gao Wang)</author>
-      <guid>./tags/general/</guid>
+      <guid>https://xinhe-lab.github.io/journal-club/tags/general/</guid>
       <description></description>
     </item>
     
