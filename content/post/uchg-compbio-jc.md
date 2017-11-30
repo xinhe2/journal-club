@@ -41,7 +41,7 @@ I use [`Mendeley`](https://www.mendeley.com/) to organize literature and to read
 ## Sharing notes 
 ### Pre-requisites
 
-We generate static webpages via `hugo` [download here](https://github.com/gohugoio/hugo/releases), a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows (and more!). After you download the executable for your platform, you can place it in one of your system's `PATH` folder in order to trigger it from command line. To show your existing `PATH`:
+We generate static webpages via `hugo` [[download here](https://github.com/gohugoio/hugo/releases)], a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows (and more!). After you download the executable for your platform, you can place it in one of your system's `PATH` folder in order to trigger it from command line. To show your existing `PATH`:
 
 ```bash
 echo $PATH
@@ -93,12 +93,12 @@ hugo
 The HTML files will be generated to `docs` folder. Optionally you can preview the post before publishing it online:
 
 ```bash
-hugo serve
+hugo server
 ```
 
 You see the website preview is published locally to `http://localhost:1313/journal-club`:
 
-```
+```text
 Started building sites ...
 Built site for language en:
 0 draft content
@@ -126,4 +126,4 @@ git commit -am "Add note for K. Dey et al 2017"
 git push
 ```
 
-Now visit https://xinhe-lab.github.io/journal-club to see your post publised with comments linked to github issues of this repository :)
+Now visit https://xinhe-lab.github.io/journal-club to see your post published with comments linked to github issues of this repository!
