@@ -81,7 +81,7 @@ The `date`, `tags` and `ghcommentid` entries are the most important:
 <hr>
 ![](/201711/setup-comments.png)
 
-(Incidentally, to add image to post, you can place the image under [`static` folder]() and load it from [the `markdown` file]() as demonstrated here.)
+(Incidentally, to add image to post, you can place the image under [`static` folder](https://github.com/xinhe-lab/journal-club/blob/master/static/201711/setup-comments.png) and load it from [the `markdown` file](https://github.com/xinhe-lab/journal-club/blob/master/content/post/uchg-compbio-jc.md#create-a-post) as demonstrated here.)
 <hr>
 
 Now, simply type `hugo` at the root of the repository (where you can find `config.toml`):
