@@ -56,7 +56,7 @@
     },
     "datePublished": "2017-11-29",
     "description": "",
-    "wordCount": 586
+    "wordCount": 594
   }
 </script>
   
@@ -66,7 +66,7 @@
 <link rel="canonical" href="https://xinhe-lab.github.io/journal-club/20171129-uchg-compbio-jc/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://xinhe-lab.github.io/journal-club/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://xinhe-lab.github.io/journal-club/favicon.png">
-<meta name="generator" content="Hugo 0.20.3" />
+<meta name="generator" content="Hugo 0.30.2" />
 
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -223,7 +223,7 @@ MathJax.Hub.Config({
     &middot; by Gao Wang
   
   &middot; Read in about 3 min
-  &middot; (586 words)
+  &middot; (594 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171129-uchg-compbio-jc%2f" onclick="window.open(this.href, 'mywin',
@@ -267,7 +267,7 @@ MathJax.Hub.Config({
 <p>In summer 2017 during one of the <a href="http://xinhelab.org">Xin He lab</a> reading group session we brought up the notion of crowdsourcing the efforts of reading papers.
 The gist is that we should figure out a way to not only share our literature reading notes, but also engage in discussions / debates if there are multiple people interested in the same paper.</p>
 
-<p>We were excited about the idea. But how do we go about doing it? Ideally we want a platform that:</p>
+<p>We were excited about the idea. But how do we go about implementing it? Ideally we want a platform that:</p>
 
 <ul>
 <li>Renders well-formatted documents</li>
@@ -298,13 +298,13 @@ The gist is that we should figure out a way to not only share our literature rea
 
 <h2 id="taking-notes">Taking notes</h2>
 
-<p>I use <a href="https://www.mendeley.com/"><code>Mendeley</code></a> to read papers directly from computer screen (reading printed paper hurts my neck :). In <code>Mendeley</code>, as demonstrated in this video below, one can annotate papers and take notes on the side panel. I write these notes in <code>markdown</code> format anyways.</p>
+<p>I use <a href="https://www.mendeley.com/"><code>Mendeley</code></a> to organize literature and to read them (reading printed paper cause me neck pains &hellip;). In <code>Mendeley</code>, as demonstrated in this video below, one can annotate papers and take notes on the side panel. I usually write these notes in <code>markdown</code> format anyways.</p>
 
 <hr>
 
 <p>
 <div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/GRqjB7FE-M8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+  <iframe src="//www.youtube.com/embed/GRqjB7FE-M8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
  </div>
 
 <hr></p>
@@ -313,12 +313,12 @@ The gist is that we should figure out a way to not only share our literature rea
 
 <h3 id="pre-requisites">Pre-requisites</h3>
 
-<p>The <a href="https://github.com/gohugoio/hugo/releases"><code>hugo</code> program</a>, a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows, and more! After you download the program, you can place it in one of your system&rsquo;s <code>PATH</code> folder so that you can run it from command line. To show your existing <code>PATH</code>:</p>
+<p>We generate static webpages via <code>hugo</code> <a href="https://github.com/gohugoio/hugo/releases">download here</a>, a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows (and more!). After you download the program, you can place it in one of your system&rsquo;s <code>PATH</code> folder in order to trigger it from command line. To show your existing <code>PATH</code>:</p>
 
 <pre><code class="language-bash">echo $PATH
 </code></pre>
 
-<h3 id="make-a-post">Make a post</h3>
+<h3 id="create-a-post">Create a post</h3>
 
 <p>Suppose you have your note taken in a <code>markdown</code> file (either pulled from your Mendeley library or typed up after your hand-written notes) ready to share with others. You can first clone this repo:</p>
 
@@ -331,11 +331,11 @@ The gist is that we should figure out a way to not only share our literature rea
 
 <pre><code class="language-markdown">+++
 date = &quot;2017-11-29&quot;
-draft = false
 title = &quot;Read-n-share&quot;
 author = &quot;Gao Wang&quot;
 tags = [&quot;general&quot;]
 ghcommentid = 1
+draft = false
 +++
 
 (your text begins)
@@ -344,12 +344,12 @@ ghcommentid = 1
 <p>The <code>date</code>, <code>tags</code> and <code>ghcommentid</code> entries are the most important:</p>
 
 <ul>
-<li>The HTML pages will be named as <code>date-filename.html</code> from your source notes <code>content/post/filename.md</code></li>
-<li>The <code>tags</code> will help organizing your notes by research field or researcher names depending on how you tag it</li>
-<li>The <code>ghcommentid</code> should match the issue ID you have just opened so that you can properly add comment box to the post</li>
+<li>The HTML page generated from <code>content/post/filename.md</code> will be named as <code>date-filename.html</code></li>
+<li>The <code>tags</code> will organize your notes by research field or researcher names depending on how you tag it</li>
+<li>The <code>ghcommentid</code> should match the issue ID you have just opened; otherwise the &laquo;comments&raquo; section will not load properly</li>
 </ul>
 
-<p>Now, simply type <code>hugo</code> at the root of the repository (where you can fine <code>config.toml</code>):</p>
+<p>Now, simply type <code>hugo</code> at the root of the repository (where you can find <code>config.toml</code>):</p>
 
 <pre><code class="language-bash">hugo
 </code></pre>
@@ -361,7 +361,7 @@ git commit -am &quot;Add note for K. Dey et al 2017&quot;
 git push
 </code></pre>
 
-<p>You will find your notes published at <a href="https://xinhe-lab.github.io/journal-club">https://xinhe-lab.github.io/journal-club</a></p>
+<p>Now your note is published at <a href="https://xinhe-lab.github.io/journal-club">https://xinhe-lab.github.io/journal-club</a> with comments linked to github issues of this repository.</p>
 
 </div>
 

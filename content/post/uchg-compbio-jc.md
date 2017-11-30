@@ -10,7 +10,7 @@ ghcommentid = 1
 In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we brought up the notion of crowdsourcing the efforts of reading papers.
 The gist is that we should figure out a way to not only share our literature reading notes, but also engage in discussions / debates if there are multiple people interested in the same paper. 
 
-We were excited about the idea. But how do we go about doing it? Ideally we want a platform that:
+We were excited about the idea. But how do we go about implementing it? Ideally we want a platform that:
 
 - Renders well-formatted documents
 - Well organized
@@ -32,7 +32,7 @@ Posting a reading blog essentially boils down to making `markdown` notes for pap
 
 ## Taking notes
 
-I use [`Mendeley`](https://www.mendeley.com/) to read papers directly from computer screen (reading printed paper hurts my neck :). In `Mendeley`, as demonstrated in this video below, one can annotate papers and take notes on the side panel. I write these notes in `markdown` format anyways.
+I use [`Mendeley`](https://www.mendeley.com/) to organize literature and to read them (reading printed paper cause me neck pains ...). In `Mendeley`, as demonstrated in this video below, one can annotate papers and take notes on the side panel. I usually write these notes in `markdown` format anyways.
 
 <hr>
 {{% youtube GRqjB7FE-M8 %}}
@@ -41,13 +41,13 @@ I use [`Mendeley`](https://www.mendeley.com/) to read papers directly from compu
 ## Sharing notes 
 ### Pre-requisites
 
-The [`hugo` program](https://github.com/gohugoio/hugo/releases), a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows, and more! After you download the program, you can place it in one of your system's `PATH` folder so that you can run it from command line. To show your existing `PATH`:
+We generate static webpages via `hugo` [download here](https://github.com/gohugoio/hugo/releases), a single executable that runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows (and more!). After you download the program, you can place it in one of your system's `PATH` folder in order to trigger it from command line. To show your existing `PATH`:
 
 ```bash
 echo $PATH
 ```
 
-### Make a post
+### Create a post
 
 Suppose you have your note taken in a `markdown` file (either pulled from your Mendeley library or typed up after your hand-written notes) ready to share with others. You can first clone this repo:
 
@@ -62,11 +62,11 @@ Before you render the HTML pages and commit, please make sure you properly add i
 ```markdown
 +++
 date = "2017-11-29"
-draft = false
 title = "Read-n-share"
 author = "Gao Wang"
 tags = ["general"]
 ghcommentid = 1
+draft = false
 +++
 
 (your text begins)
@@ -74,11 +74,11 @@ ghcommentid = 1
 
 The `date`, `tags` and `ghcommentid` entries are the most important:
 
-- The HTML pages will be named as `date-filename.html` from your source notes `content/post/filename.md`
-- The `tags` will help organizing your notes by research field or researcher names depending on how you tag it
-- The `ghcommentid` should match the issue ID you have just opened so that you can properly add comment box to the post
+- The HTML page generated from `content/post/filename.md` will be named as `date-filename.html` 
+- The `tags` will organize your notes by research field or researcher names depending on how you tag it
+- The `ghcommentid` should match the issue ID you have just opened; otherwise the "comments" section will not load properly
 
-Now, simply type `hugo` at the root of the repository (where you can fine `config.toml`):
+Now, simply type `hugo` at the root of the repository (where you can find `config.toml`):
 
 ```bash
 hugo
@@ -92,4 +92,4 @@ git commit -am "Add note for K. Dey et al 2017"
 git push
 ```
 
-You will find your notes published at https://xinhe-lab.github.io/journal-club
+Now your note is published at https://xinhe-lab.github.io/journal-club with comments linked to github issues of this repository.
