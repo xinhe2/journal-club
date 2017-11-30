@@ -1,13 +1,13 @@
 +++
 date = "2017-11-29"
 draft = false
-title = "Let's read & talk!"
+title = "Read-n-share"
 author = "Gao Wang"
 tags = ["general"]
 ghcommentid = 1
 +++
 
-In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we brought up the notion of *crowd-source* paper reading. 
+In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we brought up the notion of crowdsourcing the efforts of reading papers.
 The gist is that we should figure out a way to not only share our literature reading notes, but also engage in discussions / debates if there are multiple people interested in the same paper. 
 
 We were excited about the idea. But how do we go about doing it? Ideally we want a platform that:
@@ -55,24 +55,28 @@ Suppose you have your note taken in a `markdown` file (either pulled from your M
 git clone https://github.com/xinhe-lab/journal-club
 ```
 
-Then add your note to `content/post`. Before you render the HTML pages and commit, please make sure you properly add in the meta information. For example:
+Then add your note to `content/post`. Additionally please open a ticket in the [repository issue tracker](https://github.com/xinhe-lab/journal-club/issues) and record the issue ID. You can use something like "Comments on XX paper" as the ticket title.
+
+Before you render the HTML pages and commit, please make sure you properly add in the meta information. For example:
 
 ```markdown
 +++
 date = "2017-11-29"
 draft = false
-title = "Crowd-source paper reading"
+title = "Read-n-share"
 author = "Gao Wang"
 tags = ["general"]
+ghcommentid = 1
 +++
 
 (your text begins)
 ```
 
-The `date` and `tags` entries are the most important:
+The `date`, `tags` and `ghcommentid` entries are the most important:
 
 - The HTML pages will be named as `date-filename.html` from your source notes `content/post/filename.md`
 - The `tags` will help organizing your notes by research field or researcher names depending on how you tag it
+- The `ghcommentid` should match the issue ID you have just opened so that you can properly add comment box to the post
 
 Now, simply type `hugo` at the root of the repository (where you can fine `config.toml`):
 
