@@ -138,7 +138,7 @@ extensionmask = []
 [Languages.en]
 languageCode = "en"
 weight = 1
-copyright = "(c) 2017 Copyright | The University of Chicago Human Genetics Computational Group | The University of Chicago"
+copyright = "(c) 2017 Copyright Human Genetics Computational Group | The University of Chicago"
 title = "HGComputational Journal Club" # Site title
 
 [[Languages.en.menu.main]]
