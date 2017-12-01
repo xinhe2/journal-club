@@ -56,7 +56,7 @@
     },
     "datePublished": "2017-11-29",
     "description": "",
-    "wordCount": 757
+    "wordCount": 819
   }
 </script>
   
@@ -223,7 +223,7 @@ MathJax.Hub.Config({
     &middot; by Gao Wang
   
   &middot; Read in about 4 min
-  &middot; (757 words)
+  &middot; (819 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171129-uchg-compbio-jc%2f" onclick="window.open(this.href, 'mywin',
@@ -333,20 +333,21 @@ The gist is that we should figure out a way to not only share our literature rea
 date = &quot;2017-11-29&quot;
 title = &quot;Read-n-share&quot;
 author = &quot;Gao Wang&quot;
+ghcommentid = 1
 tags = [&quot;git&quot;]
 topics = [&quot;general&quot;]
-ghcommentid = 1
+people = [&quot;UCHGCompBio&quot;]
 draft = false
 +++
 
 (your text begins)
 </code></pre>
 
-<p>The <code>date</code>, <code>tags</code> and <code>ghcommentid</code> entries are the most important:</p>
+<p>The <code>date</code>, <code>tags</code> and <code>ghcommentid</code> attributes are the most important:</p>
 
 <ul>
 <li>The HTML page generated from <code>content/post/filename.md</code> will be named as <code>date-filename.html</code>.</li>
-<li>The <code>tags</code> will organize your notes by research field or researcher names depending on how you tag it.</li>
+<li>The <code>tags</code> will organize your notes by keywords often indicating a specific research direction.</li>
 <li>The <code>ghcommentid</code> should match the issue ID you have just opened; otherwise the &laquo;comments&raquo; section will not load properly. See image below &ndash; <code>ghcommentid = 1</code> points to Issue #1 on this repo.</li>
 </ul>
 
@@ -356,6 +357,15 @@ draft = false
 
 <p>(Incidentally, to add image to post, you can place the image under <a href="https://github.com/xinhe-lab/journal-club/blob/master/static/201711/setup-comments.png"><code>static</code> folder</a> and load it from <a href="https://github.com/xinhe-lab/journal-club/blob/master/content/post/uchg-compbio-jc.md#create-a-post">the <code>markdown</code> file</a> as demonstrated here.)
 <hr></p>
+
+<p>Additionally, attribute <code>author</code> indicates on the post the name of the contributor. <code>topics</code> and <code>people</code> are optional attributes.</p>
+
+<ul>
+<li><code>topics</code> defines broader categories than <code>tags</code>. eg. topics can be &laquo;statistics&raquo;, &laquo;transcriptomics&raquo;, &laquo;cancer&raquo;.</li>
+<li><code>people</code> lists the name of scientists involved in the paper under discussion.</li>
+</ul>
+
+<p>These attributes will not appear directly in the post itself, but will be displayed in the side bar for book-keeping.</p>
 
 <p>Now, simply type <code>hugo</code> at the root of the repository (where you can find <code>config.toml</code>):</p>
 
@@ -465,6 +475,19 @@ git push
       
       
       <div class="section taxonomies">
+        <header><div class="title"><b>person</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="https://xinhe-lab.github.io/journal-club/people/uchgcompbio">uchgcompbio</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+      
+      
+      <div class="section taxonomies">
         <header><div class="title"><b>tag</b></div></header>
 
         <div class="content">
@@ -515,7 +538,7 @@ git push
     
 <div class="container copyright">
     <small>
-  &copy; 2017 Copyright University of Chicago | Human Genetics Computational Group
+  &copy; 2017 Copyright | The University of Chicago Human Genetics Computational Group | The University of Chicago
 
   </small>
 </div>

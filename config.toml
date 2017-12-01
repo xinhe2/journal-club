@@ -39,6 +39,7 @@ code = "/:filename/"
 [taxonomies]
 tag = "tags"
 topic = "topics"
+people = "people"
 
 [author]
 name = "Gao Wang"
@@ -137,7 +138,7 @@ extensionmask = []
 [Languages.en]
 languageCode = "en"
 weight = 1
-copyright = "(c) 2017 Copyright University of Chicago | Human Genetics Computational Group"
+copyright = "(c) 2017 Copyright | The University of Chicago Human Genetics Computational Group | The University of Chicago"
 title = "HGComputational Journal Club" # Site title
 
 [[Languages.en.menu.main]]

@@ -3,9 +3,10 @@ date = "2017-11-29"
 draft = false
 title = "Read-n-share"
 author = "Gao Wang"
+ghcommentid = 1
 tags = ["git"]
 topics = ["general"]
-ghcommentid = 1
+people = ["UCHGCompBio"]
 +++
 
 In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we came up with the notion of crowdsourcing the efforts of reading papers.
@@ -65,19 +66,20 @@ Before you render the HTML pages and commit, please make sure you properly add i
 date = "2017-11-29"
 title = "Read-n-share"
 author = "Gao Wang"
+ghcommentid = 1
 tags = ["git"]
 topics = ["general"]
-ghcommentid = 1
+people = ["UCHGCompBio"]
 draft = false
 +++
 
 (your text begins)
 ```
 
-The `date`, `tags` and `ghcommentid` entries are the most important:
+The `date`, `tags` and `ghcommentid` attributes are the most important:
 
 - The HTML page generated from `content/post/filename.md` will be named as `date-filename.html`.
-- The `tags` will organize your notes by research field or researcher names depending on how you tag it.
+- The `tags` will organize your notes by keywords often indicating a specific research direction.
 - The `ghcommentid` should match the issue ID you have just opened; otherwise the "comments" section will not load properly. See image below -- `ghcommentid = 1` points to Issue #1 on this repo.
 
 <hr>
@@ -85,6 +87,13 @@ The `date`, `tags` and `ghcommentid` entries are the most important:
 
 (Incidentally, to add image to post, you can place the image under [`static` folder](https://github.com/xinhe-lab/journal-club/blob/master/static/201711/setup-comments.png) and load it from [the `markdown` file](https://github.com/xinhe-lab/journal-club/blob/master/content/post/uchg-compbio-jc.md#create-a-post) as demonstrated here.)
 <hr>
+
+Additionally, attribute `author` indicates on the post the name of the contributor. `topics` and `people` are optional attributes. 
+
+- `topics` defines broader categories than `tags`. eg. topics can be "statistics", "transcriptomics", "cancer".
+- `people` lists the name of scientists involved in the paper under discussion.
+
+These attributes will not appear directly in the post itself, but will be displayed in the side bar for book-keeping.
 
 Now, simply type `hugo` at the root of the repository (where you can find `config.toml`):
 
