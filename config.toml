@@ -39,7 +39,7 @@ code = "/:filename/"
 [taxonomies]
 tag = "tags"
 topic = "topics"
-people = "people"
+person = "people"
 
 [author]
 name = "Gao Wang"
