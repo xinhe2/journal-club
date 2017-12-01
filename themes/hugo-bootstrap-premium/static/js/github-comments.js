@@ -78,7 +78,7 @@ function DoGithubComments(comment_id, page_id)
                 }
             },
             error: function() {
-                $("#gh-comments-list").append("API rate limit exceeded for your IP address, but you can still check the comments from <a href='" + url + "'>here</a>.");
+                $("#gh-comments-list").append("Failed  to fetch comments from github, but you can still check them directly at <a href='" + url + "'>here</a>.");
             }
         });
     });
