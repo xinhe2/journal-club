@@ -28,17 +28,16 @@ function DoGithubComments(comment_id, page_id)
     if (page_id === undefined)
         page_id = 1;
 
-    var api_url = "https://api.github.com/repos/" + repo_name;
-    var api_issue_url = api_url + "/issues/" + comment_id;
-    var api_comments_url = api_url + "/issues/" + comment_id + "/comments" + "?page=" + page_id;
-
     var url = "https://github.com/" + repo_name + "/issues/" + comment_id;
+    var api_url = "https://api.github.com/repos/" + repo_name;
+    var api_comments_url = api_url + "/issues/" + comment_id + "/comments" + "?page=" + page_id;
+    // var api_issue_url = api_url + "/issues/" + comment_id;
 
     $(document).ready(function ()
     {
-        $.getJSON(api_issue_url, function(data) {
-            NbComments = data.comments;
-        });
+        // $.getJSON(api_issue_url, function(data) {
+        //     NbComments = data.comments;
+        // });
 
         $.ajax(api_comments_url, {
             headers: {Accept: "application/vnd.github.v3.html+json"},
@@ -56,7 +55,8 @@ function DoGithubComments(comment_id, page_id)
                     t += " posted at ";
                     t += "<em>" + date.toLocaleString() + "</em>";
                     t += "<div id='gh-comment-hr'></div>";
-                    t += comment.body_html;
+                    // replace emoji with their fallback image because some emoji cannot be displayed.
+                    t += comment.body_html.replace(/fallback-src="([^"]*)"(.*?>).(<\/g-emoji>)/ug, 'fallback-src="$1"$2<img class="emoji" style="vertical-align:middle" height="14" width="14" src="$1">$3');
                     t += "</div>";
                     $("#gh-comments-list").append(t);
                 });
@@ -78,7 +78,7 @@ function DoGithubComments(comment_id, page_id)
                 }
             },
             error: function() {
-                $("#gh-comments-list").append("Comments are not open for this post yet.");
+                $("#gh-comments-list").append("API rate limit exceeded for your IP address, but you can still check the comments from <a href='" + url + "'>here</a>.");
             }
         });
     });
