@@ -9,7 +9,7 @@ topics = ["regulatory genomics"]
 people = ["Darren Burgess"]
 +++
 
-[Regulatory elements: Putting enhancers into context](/research/regulatory-elements-putting-enhancers-context)
+[Regulatory elements: Putting enhancers into context](10.1038/nrg.2016.74)
 
 ## Principle of *suboptimization*
 
