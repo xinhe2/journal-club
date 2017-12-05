@@ -24,6 +24,7 @@ Please use lower case letters for topics and tags.
 - regulatory genomics
 - cancer
 - evolution
+- single cell
 
 ## List of suggested tags
 
