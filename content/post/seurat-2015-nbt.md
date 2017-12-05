@@ -44,7 +44,7 @@ Figure 1 gives the overview of the method.
     cell’s expression of landmark genes to expression model of each
     region.
 
-![](201711/seurat.jpg)
+![](/201711/seurat.jpg)
 
 Seurat has the following features
 
