@@ -9,9 +9,19 @@
     <managingEditor>gaow@uchicago.edu (Gao Wang)</managingEditor>
     <webMaster>gaow@uchicago.edu (Gao Wang)</webMaster>
     <copyright>(c) 2017 Copyright Human Genetics Computational Group | The University of Chicago</copyright>
+    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinhe-lab.github.io/journal-club/topics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Regulatory Genomics</title>
+      <link>https://xinhe-lab.github.io/journal-club/topics/regulatory-genomics/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <author>gaow@uchicago.edu (Gao Wang)</author>
+      <guid>https://xinhe-lab.github.io/journal-club/topics/regulatory-genomics/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

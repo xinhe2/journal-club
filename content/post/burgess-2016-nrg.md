@@ -9,6 +9,8 @@ topics = ["regulatory genomics"]
 people = ["Darren Burgess"]
 +++
 
+[Regulatory elements: Putting enhancers into context](/research/regulatory-elements-putting-enhancers-context)
+
 ## Principle of *suboptimization*
 
 The enhancer consists of low-affinity TF binding sites in a suboptimal syntax, in terms of flanking nucleotides and 
