@@ -4,9 +4,6 @@ draft = false
 title = "Read-n-share"
 author = "Gao Wang"
 ghcommentid = 1
-tags = ["git"]
-topics = ["general"]
-people = ["UCHGCompBio"]
 +++
 
 In summer 2017 during one of the [Xin He lab](http://xinhelab.org) reading group session we came up with the notion of crowdsourcing the efforts of reading papers.

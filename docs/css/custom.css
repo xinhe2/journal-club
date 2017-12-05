@@ -8,7 +8,7 @@
 body {
     margin: 0 auto;
     /* background: #fefefe; */
-    font: normal 100%/1.4em 'PT Sans', Verdana,'Liberation Sans',Arial,Helvetica,sans-serif;
+    font: normal 130%/1.4em 'PT Sans', Verdana,'Liberation Sans', Arial, Helvetica,sans-serif;
 }
 h1, h1 a,
 h2, h2 a,
@@ -36,28 +36,29 @@ h6 {
     margin: 0.3em auto 0.5em 0 !important;
 }
 h1 {
-    font-size: 2.857em; /* 40px, base 14px (see ".dokuwiki") */
-    line-height: 2.857em; /* 40px, base 14px (see ".dokuwiki") */
+    font-size: 2.657em;
+    line-height: 2.657em;
+    text-align: center;
+    color: #800000;
 }
 h2 {
-    font-size: 2.286em; /* 32px, base 14px (see ".dokuwiki") */
-    line-height: 2.857em; /* 40px, base 14px (see ".dokuwiki") */
+    font-size: 2.186em;
+    line-height: 2.657em;
 }
 h3 {
-    font-size: 1.714em; /* 24px, base 14px (see ".dokuwiki") */
-    line-height: 2.286em; /* 32px, base 14px (see ".dokuwiki") */
+    font-size: 1.714em;
+    line-height: 2.186em;
 }
 h4 {
-    font-size: 1.286em; /* 18px, base 14px (see ".dokuwiki") */
-    line-height: 1.714em; /* 24px, base 14px (see ".dokuwiki") */
+    font-size: 1.286em;
+    line-height: 1.714em;
 }
 h5,
 h6 {
-    font-size: 1.143em; /* 16px, base 14px (see ".dokuwiki") */
-    line-height: 1.286em; /* 18px, base 14px (see ".dokuwiki") */
+    font-size: 1.143em;
+    line-height: 1.286em;
     color: #304860;
 }
-
 
 #gh-comments {
   text-align: center;
