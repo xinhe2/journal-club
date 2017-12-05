@@ -6,7 +6,6 @@ author = "Xin He"
 ghcommentid = 3
 tags = ["regulatory sequences"]
 topics = ["regulatory genomics"]
-people = ["Darren Burgess"]
 +++
 
 [Regulatory elements: Putting enhancers into context](https://www.nature.com/articles/nrg.2016.74)
