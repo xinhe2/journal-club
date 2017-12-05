@@ -26,6 +26,18 @@ Experiment In sea squirt, 15 synthetic enhancers consisting of 2 ETS binding sit
     </item>
     
     <item>
+      <title>Spatial reconstruction of single-cell gene expression data</title>
+      <link>https://xinhe-lab.github.io/journal-club/20171205-seurat-2015-nbt/</link>
+      <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
+      <author>gaow@uchicago.edu (Gao Wang)</author>
+      <guid>https://xinhe-lab.github.io/journal-club/20171205-seurat-2015-nbt/</guid>
+      <description>Problem  infer spatial locations of various cell types which will determine the cell fate and behavior
+ RNA staining only assays a small number of transcripts and RNA-seq can measure the global gene expression, but separates the cells from their native spatial context.
+ they develop Seurat to localize the cells by integrating single cell RNA-seq data and in situ RNA patterns.
+  Modeling Overview Figure 1 gives the overview of the method.</description>
+    </item>
+    
+    <item>
       <title>Read-n-share</title>
       <link>https://xinhe-lab.github.io/journal-club/20171129-uchg-compbio-jc/</link>
       <pubDate>Wed, 29 Nov 2017 00:00:00 +0000</pubDate>

@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Regulatory elements: Putting enhancers into context  &middot; HGComputational Journal Club</title>
+  <title>Spatial reconstruction of single-cell gene expression data  &middot; HGComputational Journal Club</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,12 +14,12 @@
 
 <meta name="description" content="" />
 
-<meta name="keywords" content="regulatory sequences, ">
+<meta name="keywords" content="single cell RNA-seq, ">
 
 
-<meta property="og:title" content="Regulatory elements: Putting enhancers into context  &middot; HGComputational Journal Club ">
+<meta property="og:title" content="Spatial reconstruction of single-cell gene expression data  &middot; HGComputational Journal Club ">
 <meta property="og:site_name" content="HGComputational Journal Club"/>
-<meta property="og:url" content="https://xinhe-lab.github.io/journal-club/20171205-burgess-2016-nrg/" />
+<meta property="og:url" content="https://xinhe-lab.github.io/journal-club/20171205-seurat-2015-nbt/" />
 <meta property="og:locale" content="en">
 
 
@@ -30,7 +30,7 @@
 
   
     
-<meta property="og:article:tag" content="regulatory sequences">
+<meta property="og:article:tag" content="single cell RNA-seq">
     
   
 
@@ -38,9 +38,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@" />
-<meta name="twitter:title" content="Regulatory elements: Putting enhancers into context" />
+<meta name="twitter:title" content="Spatial reconstruction of single-cell gene expression data" />
 <meta name="twitter:description" content="" />
-<meta name="twitter:url" content="https://xinhe-lab.github.io/journal-club/20171205-burgess-2016-nrg/" />
+<meta name="twitter:url" content="https://xinhe-lab.github.io/journal-club/20171205-seurat-2015-nbt/" />
 <meta name="twitter:domain" content="https://xinhe-lab.github.io/journal-club/">
   
 
@@ -49,21 +49,21 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Regulatory elements: Putting enhancers into context",
+    "headline": "Spatial reconstruction of single-cell gene expression data",
     "author": {
       "@type": "Person",
       "name": "http://profiles.google.com/+?rel=author"
     },
     "datePublished": "2017-12-05",
     "description": "",
-    "wordCount": 106
+    "wordCount": 516
   }
 </script>
   
 
 
 
-<link rel="canonical" href="https://xinhe-lab.github.io/journal-club/20171205-burgess-2016-nrg/" />
+<link rel="canonical" href="https://xinhe-lab.github.io/journal-club/20171205-seurat-2015-nbt/" />
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://xinhe-lab.github.io/journal-club/touch-icon-144-precomposed.png">
 <link rel="icon" href="https://xinhe-lab.github.io/journal-club/favicon.png">
 <meta name="generator" content="Hugo 0.31.1" />
@@ -209,7 +209,7 @@ MathJax.Hub.Config({
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <div class="text-center">
 
-    <h1>Regulatory elements: Putting enhancers into context
+    <h1>Spatial reconstruction of single-cell gene expression data
 </h1>
 
     <div class="metas">
@@ -220,28 +220,28 @@ MathJax.Hub.Config({
 
 
   <small>
-    &middot; by Xin He
+    &middot; by Shengtong Han
   
-  &middot; Read in about 1 min
-  &middot; (106 words)
+  &middot; Read in about 3 min
+  &middot; (516 words)
   &middot; 
 <span class="share-box">Share this on:
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
 
-    <a href="https://twitter.com/intent/tweet?text=Regulatory%20elements%3a%20Putting%20enhancers%20into%20context&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://twitter.com/intent/tweet?text=Spatial%20reconstruction%20of%20single-cell%20gene%20expression%20data&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
 
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
 
-    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f&amp;title=Regulatory%20elements%3a%20Putting%20enhancers%20into%20context" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f&amp;title=Spatial%20reconstruction%20of%20single-cell%20gene%20expression%20data" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
 
-    <a href="mailto:?subject=Regulatory%20elements%3a%20Putting%20enhancers%20into%20context&amp;body=Check out this site https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+    <a href="mailto:?subject=Spatial%20reconstruction%20of%20single-cell%20gene%20expression%20data&amp;body=Check out this site https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
   </span>
 
   </small>
@@ -249,7 +249,7 @@ MathJax.Hub.Config({
 <div class="margin-10">
   <i class="fa fa-tags"></i>
   
-  <a href="https://xinhe-lab.github.io/journal-club/tags/regulatory-sequences" class="label label-primary">regulatory sequences</a>
+  <a href="https://xinhe-lab.github.io/journal-club/tags/single-cell-rna-seq" class="label label-primary">single cell RNA-seq</a>
   
 
 
@@ -264,22 +264,113 @@ MathJax.Hub.Config({
       <div class="content">
   
 
-<p><a href="https://www.nature.com/articles/nrg.2016.74">Regulatory elements: Putting enhancers into context</a></p>
+<h2 id="problem">Problem</h2>
 
-<h2 id="principle-of-suboptimization">Principle of <em>suboptimization</em></h2>
+<ul>
+<li><p>infer spatial locations of various cell types which will determine
+the cell fate and behavior</p></li>
 
-<p>The enhancer consists of low-affinity TF binding sites in a suboptimal syntax, in terms of flanking nucleotides and
-spacing between the sites. Optimizing the TF binding affinities can lead to ectopic expression.</p>
+<li><p>RNA staining only assays a small number of transcripts and RNA-seq
+can measure the global gene expression, but separates the cells from
+their native spatial context.</p></li>
 
-<h2 id="experiment">Experiment</h2>
+<li><p>they develop Seurat to localize the cells by integrating single cell
+RNA-seq data and in situ RNA patterns.</p></li>
+</ul>
 
-<p>In sea squirt, 15 synthetic enhancers consisting of 2 ETS binding sites and a ZicL binding site.
-Only 2 show activities. Further manipulation confirm key roles for binding site orientation, spacing and flanking nucleotides.</p>
+<h2 id="modeling">Modeling</h2>
 
-<h2 id="lesson">Lesson</h2>
+<h3 id="overview">Overview</h3>
 
-<p>Activity of enhancers depend on binding affinities of sites, flanking bases,
-site arrangement (orientation and spacing). For a particular enhancer, he desired activity level is not necessarily the strongest.</p>
+<p>Figure 1 gives the overview of the method.</p>
+
+<ol>
+<li><p>collect single cell RNA-seq data from dissociated cells while,
+spatial original context information is lost</p></li>
+
+<li><p>in situ hybridization patterns for a series of landmark genes
+(Landmark genes were selected as those widely expressed across
+lineage and were found to have good predictive power for inferring
+the expression of other genes that are not directly measured in the
+assay.)</p></li>
+
+<li><p>use machine learning to infer expression pattern (64 bins)</p></li>
+
+<li><p>build expression model of 47 landmark genes in each region of
+interest</p></li>
+
+<li><p>infer cell’s spatial origin probabilistically by comparing each
+cell’s expression of landmark genes to expression model of each
+region.</p></li>
+</ol>
+
+<p><img src="201711/seurat.jpg" alt="" /></p>
+
+<p>Seurat has the following features</p>
+
+<ul>
+<li><p>due to the sparsity of single cell RNA seq data, use co-expression
+patterns across cells to impute the expression of each landmark gene
+in each cell</p></li>
+
+<li><p>relates the continuous imputed RNA-seq expression levels of each
+landmark gene to the binary spatial expression values using a
+mixture model</p></li>
+
+<li><p>constructs a multivariate normal model for the joint expression of
+the landmark genes based on these mixture models</p></li>
+
+<li><p>infers the spatial origin of each profiled cell by calculating a
+posterior probability for each cell-bin pair, allowing determination
+of the cell’s likely position(s) and confidence in the mapping</p></li>
+</ul>
+
+<h3 id="matching-binary-in-situ-hybridizations-to-continuous-noisy-rna-seq-data">Matching binary in situ hybridizations to continuous, noisy RNA-seq data</h3>
+
+<ul>
+<li><p>Single cell RNA-seq data are confounded with technical noise. Seurat
+leverages the fact that RNA-seq measures multiple genes that are
+co-regulated with the landmark genes and uses these genes to impute
+the values of the landmark genes</p></li>
+
+<li><p>for each landmark gene, Seurat relate its continuous imputed RNA-seq
+expression levels to its binary state in the landmark map. Seurat
+relates the typical bimodal distribution of its imputed expression
+measurements to the on and off modes of the spatial reference map.
+Fit the distribution of imputed values of each landmark gene as a
+mixture of two Gaussian distributions by using R function
+normalmixEM with two modifications.</p></li>
+</ul>
+
+<h3 id="probabilistic-inference-of-spatial-origin">Probabilistic inference of spatial origin</h3>
+
+<ul>
+<li><p>Seurat constructs a model for the joint expression of the landmark
+genes in each bin based on the parameters of the mixture models and
+the binary spatial reference map, i.e., build 64 distinct
+multivariate normal models.</p></li>
+
+<li><p>Seurat calculates the likelihood that this cell’s expression of the
+landmark gene reflects the on state, and thus, a probability that
+this cell originated from each of 64 bins marked as on in the
+reference map</p></li>
+
+<li><p>Seurat infers the posterior probability that a cell is originated
+from each of bins in the reference map</p></li>
+</ul>
+
+<h2 id="possible-improvements">Possible improvements</h2>
+
+<ul>
+<li><p>use continuous gene expression not just <code>on'' and</code>off&rdquo; in reference
+map</p></li>
+
+<li><p>what other information could be utilized to guide the cell
+assignments</p></li>
+
+<li><p>is it biologically feasible to use a barcode to label the spatial
+origins for each cell?</p></li>
+</ul>
 
 </div>
 
@@ -287,22 +378,22 @@ site arrangement (orientation and spacing). For a particular enhancer, he desire
       <footer>
   
 <span class="share-box">Share this on:
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-facebook-official "></i></a>
 
-    <a href="https://twitter.com/intent/tweet?text=Regulatory%20elements%3a%20Putting%20enhancers%20into%20context&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://twitter.com/intent/tweet?text=Spatial%20reconstruction%20of%20single-cell%20gene%20expression%20data&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-twitter"></i></a>
 
-    <a href="https://plus.google.com/share?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="https://plus.google.com/share?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-google-plus"></i></a>
 
-    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" onclick="window.open(this.href, 'mywin',
+    <a href="http://www.reddit.com/submit?url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-reddit"></i></a>
 
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f&amp;title=Regulatory%20elements%3a%20Putting%20enhancers%20into%20context" onclick="window.open(this.href, 'mywin',
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f&amp;title=Spatial%20reconstruction%20of%20single-cell%20gene%20expression%20data" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fa fa-linkedin"></i></a>
 
-    <a href="mailto:?subject=Regulatory%20elements%3a%20Putting%20enhancers%20into%20context&amp;body=Check out this site https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-burgess-2016-nrg%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
+    <a href="mailto:?subject=Spatial%20reconstruction%20of%20single-cell%20gene%20expression%20data&amp;body=Check out this site https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171205-seurat-2015-nbt%2f" data-proofer-ignore=""><i class="fa fa-envelope"></i></a>
   </span>
 
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -311,12 +402,18 @@ site arrangement (orientation and spacing). For a particular enhancer, he desire
     <nav><ul class="pager">
     
         <li class="previous">
-          <a href="https://xinhe-lab.github.io/journal-club/20171205-seurat-2015-nbt/" title="Spatial reconstruction of single-cell gene expression data">
+          <a href="https://xinhe-lab.github.io/journal-club/20171129-uchg-compbio-jc/" title="Read-n-share">
             <span aria-hidden="true">&larr;</span>Previous
           </a>
         </li>
     
 
+    
+      <li class="next">
+        <a href="https://xinhe-lab.github.io/journal-club/20171205-burgess-2016-nrg/" title="Regulatory elements: Putting enhancers into context">
+            Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
     
     </ul> </nav>
   
@@ -333,7 +430,7 @@ site arrangement (orientation and spacing). For a particular enhancer, he desire
 
 <script type="text/javascript" src="https://xinhe-lab.github.io/journal-club/js/github-comments.js"></script>
 <script type="text/javascript">
-    DoGithubComments( 3 );
+    DoGithubComments( 2 );
 </script>
 
 </footer>
