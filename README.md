@@ -36,3 +36,6 @@ Please use lower case letters for topics and tags.
 
 ### regulatory genomics
 - regulatory sequences
+
+### single cell
+- single cell RNA-seq
