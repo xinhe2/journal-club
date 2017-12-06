@@ -95,7 +95,7 @@ Seurat has the following features
 
 ## Possible improvements
 
--   use continuous gene expression not just ``on'' and ``off'' in reference
+-   use continuous gene expression not just ''on'' and ''off'' in reference
     map
 
 -   what other information could be utilized to guide the cell
