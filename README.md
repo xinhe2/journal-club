@@ -12,7 +12,6 @@ author = "xx"
 ghcommentid = x
 tags = ["xx"]
 topics = ["xx"]
-people = ["xx"]
 +++
 ```
 
