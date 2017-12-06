@@ -8,7 +8,8 @@
 body {
     margin: 0 auto;
     /* background: #fefefe; */
-    font: normal 130%/1.5em 'PT Sans', Verdana,'Liberation Sans', Arial, Helvetica,sans-serif;
+    line-height: 1.5em;
+    font: 'PT Sans', Verdana, 'Liberation Sans', Arial, Helvetica, sans-serif;
     color: #000;
 }
 h1, h1 a,
@@ -21,7 +22,7 @@ h6, h6 a {
     font-weight: normal;
     color: __text__;
     background-color: inherit;
-    line-height: 1.4em !important;
+    line-height: 1.2em !important;
     text-align: left;
     border: none;
     padding: 0;

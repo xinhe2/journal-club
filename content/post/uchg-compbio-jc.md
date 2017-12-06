@@ -54,7 +54,7 @@ Suppose you have your note written in a `markdown` file (either copied from your
 git clone https://github.com/xinhe-lab/journal-club
 ```
 
-Then add your note to `content/post`. Additionally please open a ticket in the [repository issue tracker](https://github.com/xinhe-lab/journal-club/issues) and record the issue ID. You can use something like "Comments on XX paper" as the ticket title.
+Then add your note to `content/post`. Additionally please open a ticket in the [repository issue tracker](https://github.com/xinhe-lab/journal-club/issues) and record the issue ID. You can use something like ''Comments on XX paper'' as the ticket title.
 
 Before you render the HTML pages and commit, please make sure you properly add in the meta information. For example:
 
