@@ -59,7 +59,7 @@ Method:
 
 - TF cluster on the same alleles in regions of open chromatin
 - DATO evenly distributed across autosomes
-- 30% are in *hubs* (more than 2 TF), compared to 15% non-DATO as hubs
+- 30% are in *hubs* (more than 5 TF according to Figure 1D?), compared to 15% non-DATO as hubs
   - Sites are **cooperative**
   - hubs are sensitive to variation
 - DATO in hubs often reside on the same allele (**Figure 1B**), a pattern non-exist in non-DATO
