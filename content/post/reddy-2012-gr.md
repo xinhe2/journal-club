@@ -28,6 +28,7 @@ This paper was published in 2012: when exome sequencing was just becoming widely
 ## Question
 
 Variant discovery & annotation
+
 - variant --> disease (GWAS / exome sequencing)
 - variant --> expression --> disease (eQTL/tWAS)
 - variant --> TF occupancy imbalance --> expression & disease (this paper)
@@ -35,15 +36,18 @@ Variant discovery & annotation
 This paper studies impact of genetic variation on gene regulation. Specifically it aims to identify DATO sites and understand their properties wrt gene expression and disease
 
 ## Conclusion
+
 - Variation in core TF binding motifs: small in fraction, large in effects wrt DATO 
 - DATO sites significantly enriched disease variants particularly autoimmune disease
 
 ## Approach
 
 Measure allelic differences in expression in the same cells. RNA-Seq + Chip-Seq
+
 - **why**: RNA-seq only limits to heterozygous exonic variants
 
 Method:
+
 - Genome-wide RNA-Seq
 - TF occupancy of RNA Pol2 of *EP300* and of 24 sequences specific TFs
 - 1000 Genomes female LCL
@@ -54,7 +58,6 @@ Method:
 ### TF hubs
 
 - TF cluster on the same alleles in regions of open chromatin
-- **why**: 
 - DATO evenly distributed across autosomes
 - 30% are in *hubs* (more than 2 TF), compared to 15% non-DATO as hubs
   - Sites are **cooperative**
@@ -100,6 +103,6 @@ Highly expressed genes are more conserved: a closer link between gene expression
   - i.e, highly predictive
 
 ### Disease significance of DATO
+
 - 155 autosomal variants in TF binding sites associated with disease
 - 21 of them are DATO variants
-
