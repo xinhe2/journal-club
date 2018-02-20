@@ -9,10 +9,19 @@
     <managingEditor>gaow@uchicago.edu (Gao Wang)</managingEditor>
     <webMaster>gaow@uchicago.edu (Gao Wang)</webMaster>
     <copyright>(c) 2017 Copyright Human Genetics Computational Group | The University of Chicago</copyright>
-    <lastBuildDate>Tue, 05 Dec 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://xinhe-lab.github.io/journal-club/tags/regulatory-sequences/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Effects of sequence variation on differential allelic transcription factor occupancy and gene expression</title>
+      <link>https://xinhe-lab.github.io/journal-club/20180220-reddy-2012-gr/</link>
+      <pubDate>Tue, 20 Feb 2018 00:00:00 +0000</pubDate>
+      <author>gaow@uchicago.edu (Gao Wang)</author>
+      <guid>https://xinhe-lab.github.io/journal-club/20180220-reddy-2012-gr/</guid>
+      <description>本视频无声，安静吃完，继续做实验</description>
+    </item>
     
     <item>
       <title>Regulatory elements: Putting enhancers into context</title>
