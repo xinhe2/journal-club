@@ -56,7 +56,7 @@
     },
     "datePublished": "2018-02-20",
     "description": "",
-    "wordCount": 342
+    "wordCount": 598
   }
 </script>
   
@@ -222,8 +222,8 @@ MathJax.Hub.Config({
   <small>
     &middot; by Gao Wang
   
-  &middot; Read in about 2 min
-  &middot; (342 words)
+  &middot; Read in about 3 min
+  &middot; (598 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20180220-reddy-2012-gr%2f" onclick="window.open(this.href, 'mywin',
@@ -270,7 +270,7 @@ MathJax.Hub.Config({
 
 <ul>
 <li>Transcription factors: Bind specific DNA motif &amp; controls gene expression</li>
-<li>Chromatin Immunoprecipitation Sequencing: <a href="https://v.qq.com/iframe/player.html?vid=o1323heyigc&amp;amp;width=670&amp;amp">Cartoon: ChIP-Seq with chips</a></li>
+<li>Chromatin Immunoprecipitation Sequencing: <a href="https://v.qq.com/iframe/player.html?vid=o1323heyigc">Cartoon: ChIP-Seq with chips</a></li>
 <li>Differential allelic <TF occupancy / expression>:
 
 <ul>
@@ -299,7 +299,7 @@ MathJax.Hub.Config({
 - variant &ndash;&gt; expression &ndash;&gt; disease (eQTL/tWAS)
 - variant &ndash;&gt; TF occupancy imbalance &ndash;&gt; expression &amp; disease (this paper)</p>
 
-<p>Goal: identify DATO sites and understand their properties wrt gene expression and disease</p>
+<p>This paper studies impact of genetic variation on gene regulation. Specifically it aims to identify DATO sites and understand their properties wrt gene expression and disease</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -310,9 +310,13 @@ MathJax.Hub.Config({
 
 <h2 id="approach">Approach</h2>
 
-<p>Approach
-- measure allelic differences in expression in the same cells. RNA-Seq + Chip-Seq
-- <strong>why</strong>: RNA-seq only limits to heterozygous exonic variants
+<p>Measure allelic differences in expression in the same cells. RNA-Seq + Chip-Seq
+- <strong>why</strong>: RNA-seq only limits to heterozygous exonic variants</p>
+
+<p>Method:
+- Genome-wide RNA-Seq
+- TF occupancy of RNA Pol2 of <em>EP300</em> and of 24 sequences specific TFs
+- 1000 Genomes female LCL
 - Aligned sequence reads to both the maternal and paternal versions of the genome</p>
 
 <h2 id="results">Results</h2>
@@ -323,7 +327,12 @@ MathJax.Hub.Config({
 <li>TF cluster on the same alleles in regions of open chromatin</li>
 <li><strong>why</strong>:</li>
 <li>DATO evenly distributed across autosomes</li>
-<li>30% are in <em>hubs</em> (more than 2 TF), compared to 15% non-DATO in hubs</li>
+<li>30% are in <em>hubs</em> (more than 2 TF), compared to 15% non-DATO as hubs
+
+<ul>
+<li>Sites are <strong>cooperative</strong></li>
+<li>hubs are sensitive to variation</li>
+</ul></li>
 <li>DATO in hubs often reside on the same allele (<strong>Figure 1B</strong>), a pattern non-exist in non-DATO
 
 <ul>
@@ -339,11 +348,64 @@ MathJax.Hub.Config({
 <ul>
 <li>Strong enrichment of DATO variants within 50bp of maximal ChIP signal</li>
 <li>Heterozygous variants in motif are 3 times more likely to occur in DATO sites</li>
-<li>Variants in DNA binding motif explains only 12% DATO
+<li>Variants in DNA binding motif (of strong effects) explains only 12% DATO</li>
+</ul>
+
+<h3 id="dato-and-allele-specific-expression-ase">DATO and allele specific expression (ASE)</h3>
 
 <ul>
-<li>of weak effects</li>
+<li>Using RNA-Seq alone, 9% genes with exonic heterozygous variants (4194 transcripts) have ASE
+
+<ul>
+<li>Effect sizes are small for autosomal genes</li>
+<li>4194 transcripts represents only 39% of transcripts in sample</li>
 </ul></li>
+<li>Using RNA Pol2 ChIP-Seq, 6.3% (out of 10,353) with variants in RNA Pol2 sites have ASE
+
+<ul>
+<li>Cross clone variations: strong concordance in ASE on autosomes</li>
+<li>These variants significantly but imperfectly explains variations in expression</li>
+</ul></li>
+<li>Combined results: 910 genes in sample have ASE</li>
+</ul>
+
+<h3 id="heritibility-dato-vs-ase">Heritibility: DATO vs ASE</h3>
+
+<ul>
+<li>The stronger allele in DATO sites has greater ChIP-Seq signal in corresponding parent in 81% of the cases
+
+<ul>
+<li>Compared to 60% for ASE</li>
+</ul></li>
+<li>DATO is more strongly determined by local sequences</li>
+</ul>
+
+<h3 id="ase-genes-are-lower-expressed-and-more-tissue-specific">ASE genes are lower expressed and more tissue specific</h3>
+
+<p>Highly expressed genes are more conserved: a closer link between gene expression and evolutionary conservation than previously been shown.</p>
+
+<h3 id="tf-occupancy-explains-variation-in-gene-expression">TF occupancy explains variation in gene expression</h3>
+
+<ul>
+<li>DATO are significantly closer to genes with ASE than without
+
+<ul>
+<li>6.8% sites within 100kb of ASE genes has DATO</li>
+<li>3.9% sites within non-ASE genes has DATO</li>
+</ul></li>
+<li>non-DATO no closer to genes with ASE</li>
+<li>Strong positive DATO and ASE correlation observed within 100bp of TSS
+
+<ul>
+<li>i.e, highly predictive</li>
+</ul></li>
+</ul>
+
+<h3 id="disease-significance-of-dato">Disease significance of DATO</h3>
+
+<ul>
+<li>155 autosomal variants in TF binding sites associated with disease</li>
+<li>21 of them are DATO variants</li>
 </ul>
 
 </div>
