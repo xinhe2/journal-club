@@ -56,7 +56,7 @@
     },
     "datePublished": "2018-02-20",
     "description": "",
-    "wordCount": 1
+    "wordCount": 342
   }
 </script>
   
@@ -222,8 +222,8 @@ MathJax.Hub.Config({
   <small>
     &middot; by Gao Wang
   
-  &middot; Read in about 1 min
-  &middot; (1 words)
+  &middot; Read in about 2 min
+  &middot; (342 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20180220-reddy-2012-gr%2f" onclick="window.open(this.href, 'mywin',
@@ -262,7 +262,89 @@ MathJax.Hub.Config({
 </div>
 
       <div class="content">
-  <p><iframe class="video_iframe" data-vidtype="2" allowfullscreen="" frameborder="0" data-ratio="1.7647058823529411" data-w="480" data-src="https://v.qq.com/iframe/player.html?vid=o1323heyigc&amp;width=670&amp;height=376.875&amp;auto=0" style="display: block; width: 670px !important; height: 376.875px !important; overflow: hidden;" width="670" height="376.875" data-vh="376.875" data-vw="670" src="https://mp.weixin.qq.com/player.html" scrolling="no"></iframe><br></p><p style="white-space: normal;">本视频无声，安静吃完，继续做实验</p>
+  
+
+<p>By Reddy T. et al (2012) Genome Research.</p>
+
+<p>First, for audience not very familiar with the context:</p>
+
+<ul>
+<li>Transcription factors: Bind specific DNA motif &amp; controls gene expression</li>
+<li>Chromatin Immunoprecipitation Sequencing: <a href="https://v.qq.com/iframe/player.html?vid=o1323heyigc&amp;amp;width=670&amp;amp">Cartoon: ChIP-Seq with chips</a></li>
+<li>Differential allelic <TF occupancy / expression>:
+
+<ul>
+<li>Alleles are different versions of the same gene.</li>
+<li>To focus on allelic imbalance means to focus on heterozygotes</li>
+</ul></li>
+<li>Differential allelic TF occupancy (DATO):
+
+<ul>
+<li>preference to bind one allele over another, within the same cell type</li>
+</ul></li>
+<li>Allele specific expression (ASE):
+
+<ul>
+<li>Explained in part as functional consequence of differential allelic TF binding</li>
+</ul></li>
+<li><em>EP300</em>: histone acetyltransferase p300, makes DNA more accessible to TF</li>
+</ul>
+
+<p>This paper was published in 2012: when exome sequencing was just becoming widely adopted.</p>
+
+<h2 id="question">Question</h2>
+
+<p>Variant discovery &amp; annotation
+- variant &ndash;&gt; disease (GWAS / exome sequencing)
+- variant &ndash;&gt; expression &ndash;&gt; disease (eQTL/tWAS)
+- variant &ndash;&gt; TF occupancy imbalance &ndash;&gt; expression &amp; disease (this paper)</p>
+
+<p>Goal: identify DATO sites and understand their properties wrt gene expression and disease</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<ul>
+<li>Variation in core TF binding motifs: small in fraction, large in effects wrt DATO</li>
+<li>DATO sites significantly enriched disease variants particularly autoimmune disease</li>
+</ul>
+
+<h2 id="approach">Approach</h2>
+
+<p>Approach
+- measure allelic differences in expression in the same cells. RNA-Seq + Chip-Seq
+- <strong>why</strong>: RNA-seq only limits to heterozygous exonic variants
+- Aligned sequence reads to both the maternal and paternal versions of the genome</p>
+
+<h2 id="results">Results</h2>
+
+<h3 id="tf-hubs">TF hubs</h3>
+
+<ul>
+<li>TF cluster on the same alleles in regions of open chromatin</li>
+<li><strong>why</strong>:</li>
+<li>DATO evenly distributed across autosomes</li>
+<li>30% are in <em>hubs</em> (more than 2 TF), compared to 15% non-DATO in hubs</li>
+<li>DATO in hubs often reside on the same allele (<strong>Figure 1B</strong>), a pattern non-exist in non-DATO
+
+<ul>
+<li>Existence of coordinated differential allelic gene regulation</li>
+<li>Except for co-occupancy in a few cases such as <em>EP300</em>, these (novel) hubs are generally not explained by known PPI</li>
+</ul></li>
+<li>Variants in hubs are more conserved (<strong>Figure 1D</strong>)
+<br /></li>
+</ul>
+
+<h3 id="dato-variants">DATO variants</h3>
+
+<ul>
+<li>Strong enrichment of DATO variants within 50bp of maximal ChIP signal</li>
+<li>Heterozygous variants in motif are 3 times more likely to occur in DATO sites</li>
+<li>Variants in DNA binding motif explains only 12% DATO
+
+<ul>
+<li>of weak effects</li>
+</ul></li>
+</ul>
 
 </div>
 
