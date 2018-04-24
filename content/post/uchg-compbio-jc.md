@@ -46,6 +46,14 @@ We generate static webpages via `hugo` [[download here](https://github.com/gohug
 echo $PATH
 ```
 
+To make a post, here is a short video instruction. You can also read on to the remaining text of this document if this video instruction is not easy to follow.
+
+<video class="center-block" width="80%" height="auto" autoplay="autoplay" controls>
+  <source src="../media/jc-example.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<hr>
+
 ### Create a post
 
 Suppose you have your note written in a `markdown` file (either copied from your Mendeley notes or typed up after your hand-written notes) ready to share on this blog. You can first clone this repo:
@@ -55,6 +63,15 @@ git clone https://github.com/xinhe-lab/journal-club
 ```
 
 Then add your note to `content/post`. Additionally please open a ticket in the [repository issue tracker](https://github.com/xinhe-lab/journal-club/issues) and record the issue ID. You can use something like ''Comments on XX paper'' as the ticket title.
+
+#### LaTeX syntax support
+
+For example, inline math $\mathbf{\beta}$, display math $$\mathbf{\beta}$$ and aligned math 
+
+\begin{align}
+P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \\
+& \propto P(A)P(B|A)
+\end{align}
 
 Before you render the HTML pages and commit, please make sure you properly add in the meta information. For example:
 

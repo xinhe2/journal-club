@@ -52,7 +52,7 @@
     },
     "datePublished": "2017-11-29",
     "description": "",
-    "wordCount": 819
+    "wordCount": 879
   }
 </script>
   
@@ -218,8 +218,8 @@ MathJax.Hub.Config({
   <small>
     &middot; by Gao Wang
   
-  &middot; Read in about 4 min
-  &middot; (819 words)
+  &middot; Read in about 5 min
+  &middot; (879 words)
   &middot; 
 <span class="share-box">Share this on:
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fxinhe-lab.github.io%2fjournal-club%2f20171129-uchg-compbio-jc%2f" onclick="window.open(this.href, 'mywin',
@@ -309,6 +309,14 @@ The gist is that we should figure out a way to not only share our literature rea
 <pre><code class="language-bash">echo $PATH
 </code></pre>
 
+<p>To make a post, here is a short video instruction. You can also read on to the remaining text of this document if this video instruction is not easy to follow.</p>
+
+<p><video class="center-block" width="80%" height="auto" autoplay="autoplay" controls>
+  <source src="../media/jc-example.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<hr></p>
+
 <h3 id="create-a-post">Create a post</h3>
 
 <p>Suppose you have your note written in a <code>markdown</code> file (either copied from your Mendeley notes or typed up after your hand-written notes) ready to share on this blog. You can first clone this repo:</p>
@@ -317,6 +325,15 @@ The gist is that we should figure out a way to not only share our literature rea
 </code></pre>
 
 <p>Then add your note to <code>content/post</code>. Additionally please open a ticket in the <a href="https://github.com/xinhe-lab/journal-club/issues">repository issue tracker</a> and record the issue ID. You can use something like &ldquo;Comments on XX paper&rdquo; as the ticket title.</p>
+
+<h4 id="latex-syntax-support">LaTeX syntax support</h4>
+
+<p>For example, inline math $\mathbf{\beta}$, display math $$\mathbf{\beta}$$ and aligned math</p>
+
+<p>\begin{align}
+P(A|B) &amp;= \frac{P(A)P(B|A)}{P(B)} <br />
+&amp; \propto P(A)P(B|A)
+\end{align}</p>
 
 <p>Before you render the HTML pages and commit, please make sure you properly add in the meta information. For example:</p>
 
