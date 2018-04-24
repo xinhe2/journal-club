@@ -57,23 +57,27 @@ CONTENTLANGUAGE = {{ .Site.Params.DefaultContentLanguage }}; // used in pathname
 {{ end }}
 
 {{ if ne .Site.Params.mathjax "" }}
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/{{.Site.Params.mathjax}}/MathJax.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/{{.Site.Params.mathjax}}/config/TeX-AMS-MML_HTMLorMML.js"></script>
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/{{.Site.Params.mathjax}}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+ MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     "HTML-CSS": {
+         preferredFont: "TeX",
+         availableFonts: ["TeX"],
+         styles: {
+             scale: 110,
+             ".MathJax_Display": {
+                 "font-size": "110%",
+             }
+         }
+     }
+ });
 </script>
 
 <script type="text/x-mathjax-config">

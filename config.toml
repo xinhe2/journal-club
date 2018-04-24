@@ -89,7 +89,7 @@ home = "home"
 
 mailmunchid = "" # Mailmunch site id
 sumomeid = "" # Sumome id
-mathjax = "2.7.1" # cdnjs hosted version; empty string to disable mathjax
+mathjax = "2.7.2" # cdnjs hosted version; empty string to disable mathjax
 
 # Show a sidebar menu
 showRightSidebar = true
