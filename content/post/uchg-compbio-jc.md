@@ -66,14 +66,12 @@ Then add your note to `content/post`. Additionally please open a ticket in the [
 
 #### Tip: LaTeX syntax support
 
-For example, inline math $\hat{\beta}$, displayed math, $$\hat{\beta}$$ and aligned math 
+For example, inline math $\hat{\beta}$, displayed math, $$\hat{\beta} = 0$$ and [aligned math](https://github.com/gcushen/hugo-academic/issues/291#issuecomment-334746889)
 
-$$
-\begin{aligned}
-P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \\
+\begin{align}
+P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \\\\\\
 & \propto P(A)P(B|A)
-\end{aligned}
-$$
+\end{align}
 
 Before you render the HTML pages and commit, please make sure you properly add in the meta information. For example:
 
