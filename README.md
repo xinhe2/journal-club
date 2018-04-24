@@ -3,8 +3,9 @@ Short summaries of articles & discussions by UCHG Computational Biology Group.
 
 ## How to contribute?
 
-Please read [this post](https://xinhe-lab.github.io/journal-club/20171129-uchg-compbio-jc/) 
-for an instruction.
+First you need to have push access to this repository. Please contact the administrator 
+@CreRecombinase to get enlisted. When you are ready to contribution please find instructions in
+[this post](https://xinhe-lab.github.io/journal-club/20171129-uchg-compbio-jc/).
 
 ## A template meta-info box for a post
 

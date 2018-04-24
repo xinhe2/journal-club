@@ -64,12 +64,12 @@ git clone https://github.com/xinhe-lab/journal-club
 
 Then add your note to `content/post`. Additionally please open a ticket in the [repository issue tracker](https://github.com/xinhe-lab/journal-club/issues) and record the issue ID. You can use something like ''Comments on XX paper'' as the ticket title.
 
-#### LaTeX syntax support
+#### Tip: LaTeX syntax support
 
-For example, inline math $\mathbf{\beta}$, display math $$\mathbf{\beta}$$ and aligned math 
+For example, inline math $\hat{\beta}$, displayed math, $$\hat{\beta}$$ and aligned math 
 
 \begin{align}
-P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \\
+P(A|B) &= \frac{P(A)P(B|A)}{P(B)} \\\\
 & \propto P(A)P(B|A)
 \end{align}
 
